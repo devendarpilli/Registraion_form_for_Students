@@ -1,0 +1,27 @@
+html{
+    background-image: url("background.gif");
+    background-position: right top;
+    margin-left: 23%;
+    margin-right: 23%;
+    padding: 10px 10px 10px 10px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+}
+body{
+    background-color: #e6e6e6;
+	border-radius:5%;
+	margin-left:55px;
+	padding-left:50px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	border:2px Solid Gray;
+}
+h1{
+    color:red
+}
+h2{
+    color:red
+}
+title{
+    font-size: 10px
+}

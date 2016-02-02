@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="reg.css" rel="stylesheet" type="text/css">
+        <script src='http://code.jquery.com/jquery-1.8.1.min.js'></script>
+    </head>
+    <body>
+        <div>
+            <h1>Registration:</h1>
+<form name = register><b>
+             Name:<br><input type="text" name="first" placeholder="First" autofocus > <input type="text" name="last" placeholder="Last" focus ><br><br>
+             CLID:<br><input type="text" name="clid" maxlength="7" placeholder="eg: abc1234" focus><br><br>
+            </b>   
+        <div>
+            <p>First Semester at UL:</p>
+        </div>
+    <select>
+        <option value=" "></option>
+        <option value ="Fall 2014">Fall 2014</option>
+        <option value ="Spring 2014">Spring 2014</option>
+        <option value ="Fall 2013">Fall 2013</option>
+        <option value ="Before Fall 2013">Before Fall 2013</option>
+    </select>
+      <div>
+          <p>Degree Programs in CACS:</p>
+      </div>
+      <select>
+          <option value=" "></option>
+          <option value="Graduate">Graduate</option>
+          <option value="PhD">PhD</option>
+          <option value="Under Graduate">Under Graduate</option>
+      </select>
+    <div id="res">
+        <p>Residential Status:</p>
+    </div>
+    <p> <input id = "in_fee" type="radio" name="rad" value="In_state"> In-state<br></id>
+        <input id = "out_fee" type="radio" name="rad" value="Out_of_state"> Out-of-state<br></id>
+        </p>
+    <div id= "numCourses">
+            <p> Number of Courses You Want to Enrol:</p>
+        </div>       
+    <select id="courseSelection">
+        <option value=" "></option>        
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+   
+        <p>Courses Offered:</p>
+         <div id="course">
+    
+    <input type="checkbox" name="courses" value="CSCE 500"> CSCE 500:Design & Analysis of Algorithms<br>
+    <input type="checkbox" name="courses" value="CSCE 502" 	> CSCE 502:Comp. Basis of Bioinformatics<br>
+    <input type="checkbox" name="courses" value="CSCE 508" > CSCE 508:Image Processing<br>
+    <input type="checkbox" name="courses" value="CSCE 513" > CSCE 513:Prin of Cmp Communicat&Network <br>
+    <input type="checkbox" name="courses" value="CSCE 518" > CSCE 518:Lossless&Lossy Data Compressn<br>
+    <input type="checkbox" name="courses" value="CSCE 530" > CSCE 530:Principles of Cmp Architecture<br>
+    <input type="checkbox" name="courses" value="CSCE 536" > CSCE 536:Embedded System Design<br>
+    <input type="checkbox" name="courses" value="CSCE 538" > CSCE 538:Entertainment Computing<br>
+    <input type="checkbox" name="courses" value="CSCE 551" > CSCE 551:Principles of Compiler Design<br>
+    <input type="checkbox" name="courses" value="CSCE 555" > CSCE 555:Prin of Operatng System Theory<br>
+    <input type="checkbox" name="courses" value="CSCE 566" > CSCE 566:Data Mining<br>
+    <input type="checkbox" name="courses" value="CSCE 575" > CSCE 575:Wireless Computing&Netwk Syst <br>
+    <input type="checkbox" name="courses" value="CSCE 586" > CSCE 586:VLSI Architecture<br>
+   </div>
+
+   <p><input type="button" value="Tuition fee" id="tution_fee" > <br>
+   
+   <p> Your Tuition fee for this sem will be: <span id = "fee" style="border:2px solid #000;display:none"></span></p>
+       
+   <div><h2>Payment Options:</h2>
+   </div>
+    
+   <div id= "card":>
+       <input type='radio' name="cardt" value="Visa"> Visa
+       <input type="radio" name="cardt" value="Master Card"> Master Card<br>
+   <p>Name on Card: <input type="text" name="namecard" maxlength="25">
+   <p id ="cardnum"> Card  Number: <input type="text" name="field1" size="4" maxlength="4">-<input type="text" name="field2" size="4" maxlength="4">-<input type="text" name="field3" size="4" maxlength="4">-<input type="text" name="field4" size="4" maxlength="4" >
+   <br><br><div id="spandat">Exipration Date:   
+<select id="edate">
+    <option selected="selected" value="MM">MM</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+   <select id="eyear">
+    <option selected="selected" value="YYYY">YYYY</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2025</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    <option value="2027">2027</option>
+    <option value="2028">2028</option>
+    <option value="2029">2029</option>
+    <option value="2030">2030</option> 
+    <option value="2031">2031</option> 
+    <option value="2032">2032</option> 
+    <option value="2033">2033</option>      
+</select>
+</div>
+   <p><input type="submit" value="SUBMIT" name="submit"></p>
+   </div>
+</form>  
+		</div>
+    </body>
+</html>  
+<script>
+ $(document).ready(function(){
+        $("#tution_fee").click(function(){
+			status = true;
+			firstName = $("input[name=first]")[0].value;
+			lastName = $("input[name=last]")[0].value;
+			clid = $("input[name=clid]")[0].value;
+			stateFee = $("input[type='radio'][name='rad']:checked").length;
+			noOfCourses = $("#courseSelection").val();
+			courseSelected = $('#course input:checked').length;
+			error = "";
+			if(firstName == "" || lastName == ""){
+				error += "Please enter First Name and Last Name.\n";
+				status = false;
+			}
+			if(clid == "" ){
+				error += "Please enter CLID.\n";
+				status = false;
+			}
+			if(stateFee == 0){
+				error += "Please select Residential Status.\n";
+				status = false;
+			}
+			if(courseSelected == 0){
+				error += "Please select the Courses you wish to do.\n";
+				status = false;
+			
+			}
+			else if(courseSelected < 2 || courseSelected > 4){
+				error += "You can select minimum 2 or maximum 4 courses.\n";
+				status = false;
+			
+			}
+			if(noOfCourses == "" || noOfCourses == " "){
+				error += "Please select No of Courses you wish to do.\n";
+				status = false;
+			}
+			else if(parseInt(noOfCourses) != courseSelected ){
+				error += "The no Of courses you specified and the no of courses you have selected are not matching.\n";
+				status = false;
+			}
+			if(status == false || status == "false"){
+				alert(error);
+				return false;			
+			}
+			selectedStateFee = $("input[type='radio'][name='rad']:checked").val();
+			if(selectedStateFee == "In_state" ){
+				fee = parseInt(noOfCourses) * 3 * 900;
+			}
+			else{
+				fee = parseInt(noOfCourses)*3*1700;
+			}
+			$("#fee").show();
+			$("#fee").html(fee);
+		});
+		
+		
+});
+</script>
+  
+
